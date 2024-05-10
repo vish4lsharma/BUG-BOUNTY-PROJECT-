@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Submit Bug - Bug Bounty Program</title>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Submit a Bug Report</h1>
+    </header>
+
+    <section id="submission-form">
+      <h2>Bug Report Form</h2>
+      
+      <form action="process-submission.php" method="post">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="bug_type">Bug Type:</label>
+        <select id="bug_type" name="bug_type" required>
+          <option value="code">Code-related Bug</option>
+          <option value="design">Design Issue</option>
+          <option value="security">Security Vulnerability</option>
+          <!-- Add more bug types as needed -->
+        </select>
+
+        <label for="bug_description">Enter I.P address or Link:</label>
+        <textarea id="bug_description" name="bug_description"  required></textarea>
+
+        <button type="submit">Submit Bug</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Bug Bounty Program</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
